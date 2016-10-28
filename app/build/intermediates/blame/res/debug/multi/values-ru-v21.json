@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "C:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-v21\\values-ru-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 8,
+                    "endColumn": 12,
+                    "endOffset": 393
+                },
+                "from": {
+                    "file": "C:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\src\\main\\res\\values-ru-v21\\styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 403
+                    }
+                }
+            }
+        ]
+    }
+]

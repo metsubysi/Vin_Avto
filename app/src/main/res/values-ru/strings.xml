@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name ="app_name">VIN-авто</string>
+    <string name="enter_vin">ВВЕДИТЕ VIN</string>
+    <string name="message">VIN код должен содержать 17 символов</string>
+    <string name="message1">ВНИМАНИЕ!</string>
+    <string name="about">О программе</string>
+    <string name="vin">Проверить авто</string>
+    <string name="but3">Контакты</string>
+    <string name="check">ПРОВЕРИТЬ</string>
+    <string name="back">НАЗАД</string>
+    <string name="where_vin"><u>Где найти VIN код</u></string>
+    <string name="abouts"><u>О программе</u></string>
+    <string name="exit"><u>Выход</u></string>
+    <string name="full_inf"><u>Полный отчёт</u></string>
+    <string name="contacts"><u>Контакты</u></string>
+    <string name="about2">ПРОВЕРКА VIN
+АВТОМОБИЛЯ
+поможет Вам выявить все недостатки автомобиля, понять в каком состоянии он находится и сделать правильный выбор перед покупкой. Рекомендуем перед покупкой автомобиля проверить вин код. Проверка автомобиля поможет сэкономить Ваше время и деньги. Поэтому, рекомендуем пробить машину по вин коду. Проверка автомобиля по вин коду помогает узнать историю автомобиля. Зная вин код можно определить настоящую дату выпуска автомобиля, его модификацию и комплектацию, цвет кузова и салона, а для автомобилей из США так же можно узнать историю и такие данные, как: реальный пробег, информация о ДТП, арестах, угонах, прохождении ТО.</string>
+
+</resources>

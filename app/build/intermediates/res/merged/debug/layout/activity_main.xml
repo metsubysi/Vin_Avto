@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:hint="@string/enter_vin"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:background="@android:color/background_light"
+                android:textColor="@android:color/holo_red_dark"
+                style="Widget.AppCompat.EditText" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:onClick="onclk"
+                android:text="@string/check" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/where_vin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:linksClickable="false"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAlignment="center"
+            android:gravity="center_horizontal|center"
+            android:layout_gravity="center"
+            android:background="@drawable/tview"
+            android:clickable="true"
+            android:padding="7dp"
+            android:onClick="about" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/progressBar"
+                android:padding="100dp"
+                android:progress="@android:integer/config_shortAnimTime"
+                style="Widget.DeviceDefault.Light.ProgressBar" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
