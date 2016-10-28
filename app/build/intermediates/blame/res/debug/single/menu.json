@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\build\\intermediates\\res\\merged\\debug\\menu\\popmenu.xml",
         "source": "C:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\src\\main\\res\\menu\\popmenu.xml"
+    },
+    {
+        "merged": "D:\\Android\\Projects\\Job\\Vin_Avto\\app\\build\\intermediates\\res\\merged\\debug\\menu\\popmenu.xml",
+        "source": "D:\\Android\\Projects\\Job\\Vin_Avto\\app\\src\\main\\res\\menu\\popmenu.xml"
     }
 ]
