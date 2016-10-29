@@ -1,7 +1,7 @@
-#Fri Oct 28 10:32:52 EEST 2016
-base.0=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0405d0e47cf747dd32c8e057ce72f9d3afc893eb
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3e05ec29160187191f859536f18e71adc585a086\\classes.dex
-base.1=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3e05ec29160187191f859536f18e71adc585a086
-file.0=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\MyApplication19\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0405d0e47cf747dd32c8e057ce72f9d3afc893eb\\classes.dex
+#Sat Oct 29 21:17:42 EEST 2016
+base.0=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\Vin_Avtor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b67ef3a094701ea1e94fade0df8e7c3318bc7266
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\Vin_Avtor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_de3466d80c74dc8d3ee5cf3ecdd03175cdfbe51d\\classes.dex
+base.1=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\Vin_Avtor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_de3466d80c74dc8d3ee5cf3ecdd03175cdfbe51d
+file.0=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\Vin_Avtor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b67ef3a094701ea1e94fade0df8e7c3318bc7266\\classes.dex

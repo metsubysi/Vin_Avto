@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     public class NewThread extends AsyncTask<String, Void, String> {
 
         // Метод выполняющий запрос в фоне, в версиях выше 4 андроида, запросы в главном потоке выполнять
-        // нельзя, поэтому все что вам нужно выполнять - выносите в отдельный тред
+        // нельзя, поэтому все что вам нужно выполнять - выносите в отдельный тред!!!
         @Override
         protected String doInBackground(String... arg) {
 

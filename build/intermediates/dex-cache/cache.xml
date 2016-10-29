@@ -3,12 +3,84 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_4f43dbe41f63df95d75dcfcef753a11887c3fb79\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_0666892e2f06a9724b4eb3c4fe32e7c03b47f2a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Solodovnik\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_84eae4e1e0699426e6155b45d60566722f4d80f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d19e0624d421df4fef6ab60b60b1598b00a0eeed">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b67ef3a094701ea1e94fade0df8e7c3318bc7266\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_23a1907b742eedc753f4e8a6681b7bebd947ec98\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_3785b3deb2b69ca30f24f17c47c5600502c2f549\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Solodovnik\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.3\65fd012581ded67bc20945d85c32b4598c3a9cf1\jsoup-1.8.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsoup-1.8.3_f5ca386cdb813b08455be2a8e8002b41ecf361e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
         <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_44b3d43682f3c7c2e0ee407035c75f829458e130\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_5d2aeaa8c28decb66afdd1732684c2b3c05658e0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -30,21 +102,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Solodovnik\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_84eae4e1e0699426e6155b45d60566722f4d80f2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_23a1907b742eedc753f4e8a6681b7bebd947ec98\classes.dex" />
+        sha1="beb458721f4a12687975bb774e16acca54f91c7c">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_de3466d80c74dc8d3ee5cf3ecdd03175cdfbe51d\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,21 +129,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\Vin_Avtor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_4a48824e7ad080d907e0cb12ed12d57790420143\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
         <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_f8a51bcd7527f43266f5f13a4a5d71c0f5eb488e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Solodovnik\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.3\65fd012581ded67bc20945d85c32b4598c3a9cf1\jsoup-1.8.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
-        <dex dex="C:\Users\Solodovnik\AndroidStudioProjects\MyApplication19\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsoup-1.8.3_f5ca386cdb813b08455be2a8e8002b41ecf361e4\classes.dex" />
     </item>
 
 </items>
