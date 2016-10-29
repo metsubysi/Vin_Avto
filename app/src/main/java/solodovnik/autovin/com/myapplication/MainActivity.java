@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import org.jsoup.Jsoup;
@@ -167,7 +166,7 @@ vin=edit.getText().toString();
         // получим идентификатор выбранного пункта меню
         int id = item.getItemId();
 
-        TextView infoTextView = (TextView) findViewById(R.id.textView4);
+        //TextView infoTextView = (TextView) findViewById(R.id.textView4);
 
         // Операции для выбранного пункта меню
         switch (id) {
@@ -184,7 +183,7 @@ vin=edit.getText().toString();
                 break;
 
             case R.id.action_exit:
-                infoTextView.setText("Вы выбрали котёнка!");
+                //infoTextView.setText("Вы выбрали котёнка!");
                 break;
                      }
         return true;
