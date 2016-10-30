@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Oct 30 02:15:37 EEST 2016
+#Sun Oct 30 15:36:43 EET 2016
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\Vin_Avtor\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_part_time.xml
 118.set=ANDROID_RESOURCE

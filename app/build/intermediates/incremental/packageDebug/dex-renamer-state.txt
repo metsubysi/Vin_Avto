@@ -1,4 +1,4 @@
-#Sun Oct 30 02:15:45 EEST 2016
+#Sun Oct 30 15:36:49 EET 2016
 base.0=C\:\\Users\\Solodovnik\\AndroidStudioProjects\\Vin_Avtor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_de3466d80c74dc8d3ee5cf3ecdd03175cdfbe51d
 renamed.1=classes2.dex
 renamed.0=classes.dex
