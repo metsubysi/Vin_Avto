@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_weight="1">
 
-            <TextView android:id="@+id/text1"
+            <TextView android:id="@+id/text_itemHead"
                 android:layout_height="wrap_content"
                 android:padding="10dip"
                 android:textSize="18sp"
@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <TextView android:id="@+id/textview"
+            <TextView android:id="@+id/text_itemInfo"
                 android:layout_height="wrap_content"
                 android:padding="10dip"
                 android:textSize="16dip"

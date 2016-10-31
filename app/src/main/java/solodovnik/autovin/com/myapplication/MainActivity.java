@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 String[] from = {"massiv1", "massiv2"};
 
                 // Ids of views in listview_layout
-                int[] to = {R.id.text1, R.id.textview};
+                int[] to = {R.id.text_itemHead, R.id.text_itemInfo};
 
                 // Instantiating an adapter to store each items
                 // R.layout.listview_layout defines the layout of each item
