@@ -19,14 +19,11 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:ems="10"
                 android:id="@+id/editText"
                 android:hint="@string/enter_vin"
-                android:layout_weight="1"
-                android:textAllCaps="false"
                 android:background="@android:color/background_light"
                 android:textColor="@android:color/holo_red_dark"
                 style="Widget.AppCompat.EditText" />
@@ -37,19 +34,16 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:elevation="1dp"
             android:foregroundGravity="center"
             android:gravity="center"
             android:layout_gravity="center_horizontal">
 
             <Button
                 android:layout_width="215dp"
-                android:id="@+id/button"
-                android:onClick="onclk"
+                android:id="@+id/buttonCheck"
                 android:text="@string/check"
                 android:background="@drawable/b_put"
                 android:layout_height="60dp"
-
                 tools:textSize="18sp"
                 android:textColor="@android:color/background_light" />
         </LinearLayout>

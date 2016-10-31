@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -28,26 +29,28 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     // благодоря этому классу мы будет разбирать данные на куски
-    public Elements title;
+    private Elements title;
     // то в чем будем хранить данные пока не передадим адаптеру
-    public ArrayList<String> titleList = new ArrayList<String>();
+    private ArrayList<String> titleList = new ArrayList<String>();
     // Listview Adapter для вывода данных
 
-    public String[] massiv1;
-    public String[] massiv2;
+    private String[] massiv1;
+    private String[] massiv2;
     String vin;
-    public List<HashMap<String, Object>> aList = new ArrayList<HashMap<String, Object>>();
+    private List<HashMap<String, Object>> aList = new ArrayList<HashMap<String, Object>>();
     // List view
-    public EditText edit;
-    public ProgressBar progressBar;
+    private EditText edit;
+    private ProgressBar progressBar;
+    private Button buttonCheck;
 
     // Listview Adapter для вывода данных
-    public SimpleAdapter adapter;
+    private SimpleAdapter adapter;
     private ListView lv;
-    public Intent about;
-    public Intent full_inf;
-    public Intent abouts;
-    public Intent contacts;
+    private Intent about;
+    private Intent full_inf;
+    private Intent abouts;
+    private Intent contacts;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -59,11 +62,19 @@ public class MainActivity extends AppCompatActivity {
         abouts = new Intent(MainActivity.this, Abouts.class);
         full_inf = new Intent(MainActivity.this, Full_inf.class);
         // определение данных
-        massiv1=new String[100];
-        massiv2=new String[100];
+        massiv1 = new String[100];
+        massiv2 = new String[100];
         lv = (ListView) findViewById(R.id.listView1);
-        edit=(EditText)findViewById(R.id.editText);
-     progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        edit = (EditText) findViewById(R.id.editText);
+        edit.setText("WBAPK73559A452247");
+        buttonCheck = (Button) findViewById(R.id.buttonCheck);
+        buttonCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickCheckButton(v);
+            }
+        });
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
         progressBar.setVisibility(ProgressBar.INVISIBLE);
 
     }
@@ -74,8 +85,10 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    /** А вот и внутрений класс который делает запросы, если вы не читали статьи у меня в блоге про отдельные
-     * потоки советую почитать */
+    /**
+     * А вот и внутрений класс который делает запросы, если вы не читали статьи у меня в блоге про отдельные
+     * потоки советую почитать
+     */
     public class NewThread extends AsyncTask<String, Void, String> {
 
         // Метод выполняющий запрос в фоне, в версиях выше 4 андроида, запросы в главном потоке выполнять
@@ -88,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 // определяем откуда будем воровать данные
-                doc = Jsoup.connect("http://avtostat.com/proverka-avto?vin="+vin).get();
+                doc = Jsoup.connect("http://avtostat.com/proverka-avto?vin=" + vin).get();
                 // задаем с какого места, я выбрал заголовке статей
 
                 Element tab = doc.getElementsByTag("table").get(0);
@@ -96,32 +109,38 @@ public class MainActivity extends AppCompatActivity {
                 // чистим наш аррей лист для того что бы заполнить
                 titleList.clear();
                 // и в цикле захватываем все данные какие есть на странице
-                boolean b=true;
-                int i1=0, i2=0;
+                boolean b = true;
+                int i1 = 0, i2 = 0;
                 for (Element titles : title) {
                     // записываем в аррей лист
-                    if (b) {massiv1[i1]=titles.text();
-                        i1++; }else {massiv2[i2]=titles.text();
-                        i2++; } b=!b;}
-                aList = new ArrayList<HashMap<String, Object>>();
-                    for (int i = 0; i < i2; i++) {
-                        HashMap<String, Object> hm = new HashMap<String, Object>();
-                        hm.put("massiv1", massiv1[i]);
-                        hm.put("massiv2", massiv2[i]);
-
-                        aList.add(hm);
+                    if (b) {
+                        massiv1[i1] = titles.text();
+                        i1++;
+                    } else {
+                        massiv2[i2] = titles.text();
+                        i2++;
                     }
-                    // Keys used in Hashmap
-                    String[] from = {"massiv1", "massiv2"};
+                    b = !b;
+                }
+                aList = new ArrayList<HashMap<String, Object>>();
+                for (int i = 0; i < i2; i++) {
+                    HashMap<String, Object> hm = new HashMap<String, Object>();
+                    hm.put("massiv1", massiv1[i]);
+                    hm.put("massiv2", massiv2[i]);
 
-                    // Ids of views in listview_layout
-                    int[] to = {R.id.text1,R.id.textview};
+                    aList.add(hm);
+                }
+                // Keys used in Hashmap
+                String[] from = {"massiv1", "massiv2"};
 
-                    // Instantiating an adapter to store each items
-                    // R.layout.listview_layout defines the layout of each item
-                    adapter = new SimpleAdapter(getBaseContext(), aList, R.layout.list_item, from, to);
-                   // titleList.add(titles.text());
-                   // titleList.add(count+"))");
+                // Ids of views in listview_layout
+                int[] to = {R.id.text1, R.id.textview};
+
+                // Instantiating an adapter to store each items
+                // R.layout.listview_layout defines the layout of each item
+                adapter = new SimpleAdapter(getBaseContext(), aList, R.layout.list_item, from, to);
+                // titleList.add(titles.text());
+                // titleList.add(count+"))");
 
 
             } catch (IOException e) {
@@ -140,12 +159,13 @@ public class MainActivity extends AppCompatActivity {
             lv.setAdapter(adapter);
         }
     }
-    public void onclk(View v) {
-vin=edit.getText().toString();
-        vin="WBAPK73559A452247";
-        if (vin.length()!=17) {
+
+    public void onClickCheckButton(View v) {
+        vin = edit.getText().toString();
+
+        if (vin == null || vin.length() != 17) {
             LayoutInflater inflater = getLayoutInflater();
-            View layout = inflater.inflate(R.layout.lay,
+            View layout = inflater.inflate(R.layout.toast_layout,
                     (ViewGroup) findViewById(R.id.toast_layout));
             Toast toast = new Toast(getApplicationContext());
             toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
@@ -154,12 +174,17 @@ vin=edit.getText().toString();
             toast.show();
 
             // Toast toast = Toast.makeText(getApplicationContext(),this.getString(R.string.message), Toast.LENGTH_SHORT);toast.show();
-        } else {progressBar.setVisibility(ProgressBar.VISIBLE);lv.setVisibility(ListView.INVISIBLE);
-        NewThread mt = new NewThread();
-        mt.execute();}
+        } else {
+            progressBar.setVisibility(ProgressBar.VISIBLE);
+            lv.setVisibility(ListView.INVISIBLE);
+            NewThread mt = new NewThread();
+            mt.execute();
+        }
     }
-    public void about(View v)
-    {startActivity(about);}
+
+    public void about(View v) {
+        startActivity(about);
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -185,7 +210,7 @@ vin=edit.getText().toString();
             case R.id.action_exit:
                 //infoTextView.setText("Вы выбрали котёнка!");
                 break;
-                     }
+        }
         return true;
     }
 }
