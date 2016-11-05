@@ -10,27 +10,40 @@
         android:layout_height="match_parent"
         tools:ignore="UselessParent">
 
+        <TextView
+            android:text="@string/toptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:paddingTop="6dp" />
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:id="@+id/editText"
                 android:hint="@string/enter_vin"
-                android:background="@android:color/background_light"
-                android:textColor="@android:color/holo_red_dark"
-                style="Widget.AppCompat.EditText" />
+                android:background="@drawable/textfone"
+                style="Widget.AppCompat.EditText"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="0dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
             android:foregroundGravity="center"
             android:gravity="center"
             android:layout_gravity="center_horizontal">
@@ -42,7 +55,8 @@
                 android:background="@drawable/b_put"
                 android:layout_height="60dp"
                 tools:textSize="18sp"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <FrameLayout
