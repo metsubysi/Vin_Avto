@@ -33,16 +33,7 @@ import java.util.List;
 
 public class MainFragment extends Fragment {
 
-    // благодоря этому классу мы будет разбирать данные на куски
-    private Elements title;
-    // то в чем будем хранить данные пока не передадим адаптеру
-    private ArrayList<String> titleList = new ArrayList<String>();
-    // Listview Adapter для вывода данных
-
-    private String[] massiv1;
-    private String[] massiv2;
     String vin;
-    private List<HashMap<String, Object>> aList = new ArrayList<HashMap<String, Object>>();
 
     // List view
     private EditText edit;
@@ -52,6 +43,9 @@ public class MainFragment extends Fragment {
     // Listview Adapter для вывода данных
     private SimpleAdapter adapter;
     private ListView lv;
+
+    private VinInfo mVinInfo;
+
     /*private Intent about;
     private Intent full_inf;
     private Intent abouts;
@@ -67,8 +61,6 @@ public class MainFragment extends Fragment {
         abouts = new Intent(MainActivity.this, Abouts.class);
         full_inf = new Intent(MainActivity.this, Full_inf.class);*/
         // определение данных
-        massiv1 = new String[100];
-        massiv2 = new String[100];
         lv = (ListView) v.findViewById(R.id.listView1);
         edit = (EditText) v.findViewById(R.id.editText);
         edit.setText("WBAPK73559A452247");
@@ -81,8 +73,6 @@ public class MainFragment extends Fragment {
         });
         progressBar = (ProgressBar) v.findViewById(R.id.progressBar);
         progressBar.setVisibility(ProgressBar.INVISIBLE);
-
-
         return v;
     }
 
@@ -97,57 +87,11 @@ public class MainFragment extends Fragment {
         @Override
         protected String doInBackground(String... arg) {
 
-            // класс который захватывает страницу
-            Document doc;
-
-            try {
-                // определяем откуда будем воровать данные
-                doc = Jsoup.connect("http://avtostat.com/proverka-avto?vin=" + vin).get();
-                // задаем с какого места, я выбрал заголовке статей
-
-                Element tab = doc.getElementsByTag("table").get(0);
-                title = tab.getElementsByTag("td");//doc.select("table.mytables");
-                // чистим наш аррей лист для того что бы заполнить
-                titleList.clear();
-                // и в цикле захватываем все данные какие есть на странице
-                boolean b = true;
-                int i1 = 0, i2 = 0;
-                for (Element titles : title) {
-                    // записываем в аррей лист
-                    if (b) {
-                        massiv1[i1] = titles.text();
-                        i1++;
-                    } else {
-                        massiv2[i2] = titles.text();
-                        i2++;
-                    }
-                    b = !b;
-                }
-                aList = new ArrayList<HashMap<String, Object>>();
-                for (int i = 0; i < i2; i++) {
-                    HashMap<String, Object> hm = new HashMap<String, Object>();
-                    hm.put("massiv1", massiv1[i]);
-                    hm.put("massiv2", massiv2[i]);
-
-                    aList.add(hm);
-                }
-                // Keys used in Hashmap
-                String[] from = {"massiv1", "massiv2"};
-
-                // Ids of views in listview_layout
+            mVinInfo = new VinInfo(vin);
+            if (mVinInfo.fillData()) {
                 int[] to = {R.id.text_itemHead, R.id.text_itemInfo};
-
-                // Instantiating an adapter to store each items
-                // R.layout.listview_layout defines the layout of each item
-                adapter = new SimpleAdapter(getActivity().getBaseContext(), aList, R.layout.list_item, from, to);
-                // titleList.add(titles.text());
-                // titleList.add(count+"))");
-
-
-            } catch (IOException e) {
-                e.printStackTrace();
+                adapter = new SimpleAdapter(getActivity().getBaseContext(), mVinInfo.getaList(), R.layout.list_item, mVinInfo.from, to);
             }
-            // ничего не возвращаем потому что я так захотел)
             return null;
         }
 
