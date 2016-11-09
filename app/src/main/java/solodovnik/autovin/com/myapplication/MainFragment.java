@@ -17,15 +17,6 @@ import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by grez on 01.11.2016.
@@ -45,11 +36,6 @@ public class MainFragment extends Fragment {
     private ListView lv;
 
     private VinInfo mVinInfo;
-
-    /*private Intent about;
-    private Intent full_inf;
-    private Intent abouts;
-    private Intent contacts;*/
 
     @Nullable
     @Override

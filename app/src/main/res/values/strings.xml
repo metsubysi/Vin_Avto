@@ -3,7 +3,7 @@
     <string name="app_name">VIN-auto</string>
     <string name="enter_vin">ENTER VIN</string>
     <string name="message">VIN code must be consist from 17 simbols</string>
-    <string name="message1">ATENTION!</string>
+    <string name="message1">ATTENTION!</string>
     <string name="about">About</string>
     <string name="vin">Check car</string>
     <string name="but3">Contacts</string>
@@ -14,7 +14,7 @@
     <string name="exit"><u>Quit</u></string>
     <string name="full_inf"><u>Full report</u></string>
     <string name="contacts"><u>Contacts</u></string>
-    <string name="toptext">CHECK YOUR AVTO</string>
+    <string name="toptext">CHECK YOUR AUTO</string>
     <string name="about2">ПРОВЕРКА VIN
 АВТОМОБИЛЯ
 поможет Вам выявить все недостатки автомобиля, понять в каком состоянии он находится и сделать правильный выбор перед покупкой. Полный отчет может содержать такую информацию, как: пробег, количество владельцев, был ли автомобиль поврежден, как часто обслуживался и т.д. Рекомендуем перед покупкой автомобиля проверить вин код. Проверка автомобиля поможет сэкономить Ваше время и деньги. Поэтому, рекомендуем пробить машину по вин коду.</string>

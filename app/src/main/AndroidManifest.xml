@@ -17,12 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenu"/>
         <activity android:name=".About"/>
         <activity android:name=".Contacts"/>
         <activity android:name=".Abouts"/>
         <activity android:name=".Full_inf"/>
-        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 
+import solodovnik.autovin.com.myapplication.notUse.MainActivity;
+
 public class About extends Activity {
 public Intent back;
     @Override

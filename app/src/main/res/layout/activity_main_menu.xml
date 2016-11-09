@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="solodovnik.autovin.com.myapplication.MainMenu"
+    tools:context="solodovnik.autovin.com.myapplication.notUse.MainMenu"
     android:background="@drawable/menu_fone">
 
     <LinearLayout
