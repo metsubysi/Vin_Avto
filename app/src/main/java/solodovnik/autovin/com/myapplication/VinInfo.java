@@ -17,13 +17,21 @@ import java.util.List;
  */
 
 public class VinInfo {
+    private static VinInfo instance;
     public static String[] from = {"itemHead", "itemInfo"};
     private Elements title;
     private String mVin;
     private List<HashMap<String, Object>> aList = new ArrayList<HashMap<String, Object>>();
 
-    public VinInfo(String vin){
-        mVin = vin;
+    private VinInfo(){
+    }
+
+    public static VinInfo getInstance(){
+        if (instance == null) {
+            instance = new VinInfo();
+            return instance;
+        }
+        return instance;
     }
 
     public boolean fillData(){
@@ -54,8 +62,13 @@ public class VinInfo {
 
         } catch (IOException e) {
             e.printStackTrace();
+            aList = null;
             return false;
         }
+    }
+
+    public boolean aListIsReady() {
+        return aList != null;
     }
 
     public List<HashMap<String, Object>> getaList() {
@@ -64,5 +77,9 @@ public class VinInfo {
 
     public String getVin() {
         return mVin;
+    }
+
+    public void setVin(String vin) {
+        mVin = vin;
     }
 }

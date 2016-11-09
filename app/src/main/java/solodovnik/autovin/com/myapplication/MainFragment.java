@@ -54,6 +54,7 @@ public class MainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        setRetainInstance(true);
         View v = inflater.inflate(R.layout.activity_main,null);
 
         /* about = new Intent(MainActivity.this, About.class);
@@ -87,8 +88,9 @@ public class MainFragment extends Fragment {
         @Override
         protected String doInBackground(String... arg) {
 
-            mVinInfo = new VinInfo(vin);
-            if (mVinInfo.fillData()) {
+            mVinInfo = VinInfo.getInstance();
+            mVinInfo.setVin(vin);
+            if (mVinInfo.fillData() && mVinInfo.aListIsReady()) {
                 int[] to = {R.id.text_itemHead, R.id.text_itemInfo};
                 adapter = new SimpleAdapter(getActivity().getBaseContext(), mVinInfo.getaList(), R.layout.list_item, mVinInfo.from, to);
             }
@@ -127,5 +129,12 @@ public class MainFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (adapter != null) {
+            lv.setAdapter(adapter);
+        }
 
+    }
 }
